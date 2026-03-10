@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Falcon 180B - IA de Codi Obert</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/blood.css" id="theme">
+
+    <style>
+      .reveal .slides section h1 {
+        font-size: 2.5em;
+        text-transform: none;
+      }
+      .reveal .slides section p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-align: center;
+      }
+      .reveal ul {
+        display: inline-block;
+        text-align: left;
+      }
+      .reveal .slides section .highlight {
+        color: #e7ad52;
+      }
+      .subtitle {
+        color: #ddd;
+        font-size: 1.5em;
+        margin-bottom: 20px !important;
+      }
+      .author {
+        margin-top: 50px !important;
+        font-size: 1em !important;
+        color: #aaa;
+      }
+      .footer-note {
+        font-size: 0.8em !important;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Diapositiva 1: Portada -->
+        <section data-auto-animate>
+          <h1>Falcon <span class="highlight">180B</span></h1>
+          <p class="subtitle">Models d'entrenament IA de codi obert</p>
+          <p class="author">Per: Miquel Dieguez Balastegui<br>Curs: 2026-2026 | Mòdul: Digitalització (DAM1)</p>
+        </section>
+
+        <!-- Diapositiva 2: Què fa? -->
+        <section data-auto-animate>
+          <h2>Què és <span class="highlight">Falcon 180B</span>?</h2>
+          <p>Un LLM (Large Language Model) gegant amb <strong>180 mil milions</strong> de paràmetres, creat pel TII (Emirats Àrabs Units).</p>
+          <ul>
+            <li class="fragment">🟢 Llegeix i genera text</li>
+            <li class="fragment">🟢 Respon preguntes i fa resums</li>
+            <li class="fragment">🟢 Tradueix i funciona com assistent</li>
+          </ul>
+        </section>
+
+        <!-- Diapositiva 3: Entrenament -->
+        <section data-auto-animate>
+          <h2>Entrenament i dades</h2>
+          <p>Entrenat amb una quantitat massiva de dades.</p>
+          <ul>
+            <li class="fragment"><strong>3,5 trilions</strong> de tokens procesats</li>
+            <li class="fragment">Basat en <strong>RefinedWeb</strong> (textos de qualitat d'internet)</li>
+          </ul>
+          <p class="fragment"><br><em>Això li permet entendre i parlar de forma molt natural.</em></p>
+        </section>
+
+        <!-- Diapositiva 4: Codi Obert -->
+        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+          <h2>Per què és important? <br>És <span style="color: #fff;">Codi Obert</span></h2>
+          <p style="color:#eee">A diferència de models propietaris com GPT-4:</p>
+          <ul style="color:#fff">
+            <li class="fragment">Els seus pesos i codi són lliures</li>
+            <li class="fragment">Qualsevol pot investigar-lo i modificar-lo</li>
+            <li class="fragment">Ajuda a democratitzar la IA potent</li>
+          </ul>
+        </section>
+
+        <!-- Diapositiva 5: Rendiment -->
+        <section data-auto-animate>
+          <h2>Rendiment i Potència</h2>
+          <p>Un dels millors models oberts al mercat.</p>
+          <ul>
+            <li class="fragment">🏆 Nivells similars a Meta LLaMA 2 o PaLM 2</li>
+            <li class="fragment">⚠️ Però atenció: requereix molt hardware (centenars de GB de RAM o GPUs) per moure'l en local</li>
+            <li class="fragment">💬 Disposa de versió Base i versió Chat per converses naturals</li>
+          </ul>
+        </section>
+
+        <!-- Diapositiva 6: Final -->
+        <section>
+          <h2>Gràcies!</h2>
+          <p>Alguna pregunta?</p>
+          <p class="footer-note">Projecte basat en RA4 Models d'entrenament IA de codi obert</p>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: 'convex',
+        center: true,
+        autoPlayMedia: true
+      });
+    </script>
+  </body>
+</html>
