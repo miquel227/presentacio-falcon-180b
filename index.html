@@ -25,85 +25,70 @@
       }
 
       body {
-        background: #0f172a; /* Slate 900 */
+        background: #0f172a; 
         background-image: radial-gradient(circle at 15% 50%, rgba(0, 201, 255, 0.08), transparent 25%),
                           radial-gradient(circle at 85% 30%, rgba(146, 254, 157, 0.08), transparent 25%);
       }
 
       .reveal .slides section h1 {
-        font-size: 3.2em; /* Reduït per evitar que es talli */
+        font-size: 2.8em; 
         letter-spacing: -2px;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.1em;
         text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
       }
       
       .reveal .slides section h2 {
-        font-size: 2em; /* Reduït per encaixar millor */
-        margin-bottom: 0.8em;
+        font-size: 1.8em; 
+        margin-bottom: 0.5em;
         letter-spacing: -1px;
       }
 
       .reveal .slides section p {
-        font-size: 1.05em; /* Lletra més controlada */
-        line-height: 1.5;
-        color: #cbd5e1; /* Slate 300 */
+        font-size: 0.9em; 
+        line-height: 1.4;
+        color: #cbd5e1; 
       }
 
-      /* Card Style for content */
       .glass-card {
         background: rgba(255, 255, 255, 0.03);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 25px; /* Reduït d'original 40px */
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        border-radius: 16px;
+        padding: 20px 25px; 
+        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
         transition: transform 0.3s ease, border-color 0.3s ease;
-      }
-      
-      .glass-card:hover {
-        transform: translateY(-5px);
-        border-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 30px 60px -12px rgba(0, 201, 255, 0.15);
       }
 
       .reveal ul {
         display: block;
-        margin: 15px auto;
+        margin: 10px auto;
         padding: 0;
         list-style: none;
         max-width: 800px;
       }
 
       .reveal ul li {
-        margin-bottom: 12px;
-        padding: 15px 20px;
+        margin-bottom: 8px;
+        padding: 10px 15px;
         background: rgba(255, 255, 255, 0.05);
-        border-radius: 12px;
+        border-radius: 10px;
         border-left: 4px solid transparent;
-        transition: all 0.3s ease;
         display: flex;
         align-items: center;
-        gap: 12px;
-        font-size: 0.9em;
-      }
-
-      .reveal ul li:hover {
-        background: rgba(255, 255, 255, 0.08);
-        border-left: 4px solid #00C9FF;
-        transform: translateX(10px);
+        gap: 10px;
+        font-size: 0.8em;
       }
       
       .reveal ul li i {
         font-style: normal;
-        font-size: 1.2em;
+        font-size: 1.1em;
         background: var(--primary-gradient);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
-      /* Text Gradients */
       .gradient-text {
         background: var(--primary-gradient);
         background-clip: text;
@@ -119,46 +104,45 @@
         -webkit-text-fill-color: transparent;
       }
 
-      /* Specific elements */
       .subtitle {
-        font-size: 1.4em !important;
+        font-size: 1.2em !important;
         font-weight: 300;
-        color: #94a3b8 !important; /* Slate 400 */
-        margin-bottom: 25px !important;
+        color: #94a3b8 !important; 
+        margin-bottom: 15px !important;
       }
       
       .author-badge {
         display: inline-block;
-        margin-top: 25px;
-        padding: 8px 20px;
+        margin-top: 15px;
+        padding: 6px 15px;
         background: rgba(15, 23, 42, 0.6);
         border-radius: 50px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        font-size: 0.8em !important;
+        font-size: 0.7em !important;
         color: #94a3b8;
       }
 
       .highlight-badge {
         display: inline-block;
-        padding: 5px 15px;
-        border-radius: 12px;
+        padding: 4px 12px;
+        border-radius: 8px;
         background: rgba(0, 201, 255, 0.1);
         color: #00C9FF;
         font-weight: 700;
-        font-size: 0.75em;
-        margin-bottom: 8px;
+        font-size: 0.6em;
+        margin-bottom: 5px;
       }
 
       .stat-box {
         text-align: center;
-        padding: 15px;
+        padding: 10px;
       }
       
       .stat-number {
-        font-size: 3.5em;
+        font-size: 2.8em;
         font-weight: 900;
         line-height: 1;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         background: var(--primary-gradient);
         background-clip: text;
         -webkit-background-clip: text;
@@ -167,28 +151,27 @@
       }
       
       .stat-label {
-        font-size: 0.9em;
+        font-size: 0.7em;
         color: #94a3b8;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-weight: 500;
       }
 
       .grid-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 15px;
         align-items: center;
       }
 
       .footer-note {
-        font-size: 0.7em !important;
+        font-size: 0.6em !important;
         color: #64748b !important;
-        margin-top: 40px !important;
+        margin-top: 20px !important;
         opacity: 0.6;
       }
       
-      /* Pulse animation for the thank you slide */
       @keyframes pulse {
         0% { transform: scale(1); opacity: 0.8; }
         50% { transform: scale(1.05); opacity: 1; text-shadow: var(--accent-glow); }
@@ -205,9 +188,9 @@
         
         <!-- Diapositiva 1: Portada -->
         <section data-auto-animate data-transition="zoom">
-          <div class="glass-card" style="padding: 35px 20px;">
+          <div class="glass-card">
             <div class="highlight-badge">IA DE CODI OBERT</div>
-            <h1 style="margin-top: 5px;">FALCON <span class="gradient-text">180B</span></h1>
+            <h1 style="margin-top: 0px;">FALCON <span class="gradient-text">180B</span></h1>
             <p class="subtitle">El gegant lliure que desafia els models privats</p>
             <div class="author-badge">
               <strong>Miquel Dieguez</strong> | Digitalització (DAM1) | 2026
@@ -224,11 +207,11 @@
               <div class="stat-label">Mil Milions de Paràmetres</div>
             </div>
             <div style="text-align: left;">
-              <p style="font-size: 0.95em; margin-bottom: 15px;">Creat pel <strong>Technology Innovation Institute (TII)</strong>, és un LLM d'escala massiva que rivalitza amb els millors del món.</p>
+              <p style="font-size: 0.85em; margin-bottom: 10px;">Creat pel <strong>Technology Innovation Institute (TII)</strong>, és un LLM massiu que rivalitza amb els millors del món.</p>
               <ul style="margin: 0;">
                 <li class="fragment"><i>📝</i> Redacció i generació de text</li>
-                <li class="fragment"><i>🧠</i> Raonament i resolució de problemes</li>
-                <li class="fragment"><i>💬</i> Assistent conversacional avançat</li>
+                <li class="fragment"><i>🧠</i> Raonament i resolució problemes</li>
+                <li class="fragment"><i>💬</i> Assistent conversacional</li>
               </ul>
             </div>
           </div>
@@ -237,51 +220,51 @@
         <!-- Diapositiva 3: Entrenament -->
         <section data-auto-animate data-transition="concave">
           <h2>Magnitud d'Entrenament</h2>
-          <p style="margin-bottom: 20px;">Entrenat amb una quantitat de dades sense precedents en l'ecosistema obert.</p>
+          <p style="margin-bottom: 10px;">Entrenat amb una quantitat de dades sense precedents en l'ecosistema obert.</p>
           <div class="glass-card">
-            <h3 class="gradient-text" style="font-size: 2.8em; margin-bottom: 5px;">3,5 TRILIONS</h3>
-            <p style="font-size: 1.1em; color: #fff;">de tokens processats</p>
-            <hr style="border-color: rgba(255,255,255,0.1); margin: 15px 0;">
-            <p style="font-size: 0.9em;">Usant <strong>RefinedWeb</strong>: S'ha filtrat de forma massiva internet per crear un dataset de màxima puresa i qualitat, descartant contingut brossa.</p>
+            <h3 class="gradient-text" style="font-size: 2.2em; margin-bottom: 0px;">3,5 TRILIONS</h3>
+            <p style="font-size: 0.9em; color: #fff; margin-top: 0px;">de tokens processats</p>
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 10px 0;">
+            <p style="font-size: 0.8em; margin-bottom: 0;">Usant <strong>RefinedWeb</strong>: S'ha filtrat internet massivament per crear un dataset de qualitat i descartar brossa.</p>
           </div>
         </section>
 
         <!-- Diapositiva 4: Codi Obert -->
         <section data-transition="slide" data-background-gradient="radial-gradient(circle at center, #1e293b 0%, #0f172a 100%)">
-          <h2>La Revolució del <span class="gradient-text">Codi Obert</span></h2>
-          <p style="margin-bottom:10px;">A diferència de models opacs com GPT-4, Falcon és de domini públic.</p>
+          <h2>La Revolució <span class="gradient-text">Oberta</span></h2>
+          <p style="margin-bottom:5px;">A diferència de models opacs com GPT-4, Falcon és de domini públic.</p>
           
-          <ul class="glass-card" style="padding: 15px 25px; margin-top: 15px;">
-            <li class="fragment"><i>🔓</i> <strong>Accés Total:</strong> Codis i pesos disponibles per a tothom.</li>
-            <li class="fragment"><i>🔬</i> <strong>Investigació:</strong> Autèntic motor per a universitats i desenvolupadors.</li>
-            <li class="fragment"><i>🏢</i> <strong>Empreses:</strong> Creació de solucions sense pagar llicències astronòmiques.</li>
+          <ul class="glass-card" style="padding: 10px 15px; margin-top: 10px;">
+            <li class="fragment"><i>🔓</i> <strong>Accès:</strong> Codis i pesos disponibles.</li>
+            <li class="fragment"><i>🔬</i> <strong>Innovació:</strong> Motor per a universitats.</li>
+            <li class="fragment"><i>🏢</i> <strong>Negoci:</strong> Zero llicències astronòmiques.</li>
           </ul>
         </section>
 
         <!-- Diapositiva 5: Rendiment -->
         <section data-auto-animate data-transition="zoom">
-          <h2>Rendiment de Primera Lliga</h2>
+          <h2>Rendiment de Primera</h2>
           <div class="grid-2">
             <div>
               <ul style="margin: 0; padding: 0;">
-                <li class="fragment" style="background: rgba(0, 201, 255, 0.1); border-left-color: #00C9FF;"><i>🏆</i> Supera a models com LLaMA 2</li>
-                <li class="fragment"><i>⚖️</i> Competeix directament amb PaLM 2 i GPT-3.5</li>
-                <li class="fragment"><i>🗣️</i> Versions 'Base' i 'Chat' especialitzades</li>
+                <li class="fragment" style="background: rgba(0, 201, 255, 0.1); border-left-color: #00C9FF;"><i>🏆</i> Supera a LLaMA 2</li>
+                <li class="fragment"><i>⚖️</i> Igual a PaLM 2 i GPT-3.5</li>
+                <li class="fragment"><i>🗣️</i> Versions 'Base' i 'Chat'</li>
               </ul>
             </div>
-            <div class="glass-card fragment" style="border-color: rgba(255, 107, 107, 0.3); padding: 20px;">
-              <h4 class="gradient-text-alt" style="margin-bottom: 10px; font-size:1.2em;">⚠️ El Cost del Poder</h4>
-              <p style="font-size: 0.8em; margin: 0; line-height: 1.4;">Executar aquest model localment requereix maquinari extrem. Es necessiten desenes de GPUs professionals o centenars de GB de RAM per moure'l amb fluïdesa.</p>
+            <div class="glass-card fragment" style="border-color: rgba(255, 107, 107, 0.3); padding: 15px;">
+              <h4 class="gradient-text-alt" style="margin-bottom: 5px; font-size:1em;">⚠️ El Cost del Poder</h4>
+              <p style="font-size: 0.7em; margin: 0; line-height: 1.3;">Aixecar-lo localment requereix hardware extrem: desenes de GPUs professionals o centenars de GB de RAM per moure'l.</p>
             </div>
           </div>
         </section>
 
         <!-- Diapositiva 6: Final -->
         <section data-transition="fade">
-          <div style="padding: 40px 0;">
-            <h1 class="gradient-text pulse-text" style="font-size: 4em;">Gràcies!</h1>
-            <p style="font-size: 1.3em; margin-top: 15px;">Teniu alguna pregunta?</p>
-            <p class="footer-note">Treball realitzat per a la Tasca RA4 Models d'entrenament IA de codi obert</p>
+          <div style="padding: 20px 0;">
+            <h1 class="gradient-text pulse-text" style="font-size: 3em;">Gràcies!</h1>
+            <p style="font-size: 1.1em; margin-top: 10px;">Teniu alguna pregunta?</p>
+            <p class="footer-note">Tasca RA4 Models d'entrenament IA de codi obert</p>
           </div>
         </section>
 
@@ -291,9 +274,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
     <script>
       Reveal.initialize({
-        width: 1080,
-        height: 720,
-        margin: 0.08,
+        width: 960,
+        height: 700,
+        margin: 0.04,
         minScale: 0.2,
         maxScale: 2.0,
         hash: true,
