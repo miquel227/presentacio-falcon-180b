@@ -73,7 +73,7 @@
         padding: 10px 15px;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
-        border-left: 4px solid transparent;
+        border-left: 4px solid #00C9FF; /* Afegit el bord blau directe */
         display: flex;
         align-items: center;
         gap: 10px;
@@ -112,14 +112,13 @@
       }
       
       .author-badge {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 6px 15px;
-        background: rgba(15, 23, 42, 0.6);
-        border-radius: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        font-size: 0.7em !important;
-        color: #94a3b8;
+        display: block;
+        margin-top: 25px;
+        text-align: right;
+        font-size: 0.85em !important;
+        color: #00C9FF;
+        font-weight: 500;
+        letter-spacing: 1px;
       }
 
       .highlight-badge {
@@ -187,19 +186,19 @@
       <div class="slides">
         
         <!-- Diapositiva 1: Portada -->
-        <section data-auto-animate data-transition="zoom">
-          <div class="glass-card">
+        <section data-transition="zoom-in fade-out">
+          <div class="glass-card" style="text-align: left;">
             <div class="highlight-badge">IA DE CODI OBERT</div>
             <h1 style="margin-top: 0px;">FALCON <span class="gradient-text">180B</span></h1>
-            <p class="subtitle">El gegant lliure que desafia els models privats</p>
+            <p class="subtitle" style="text-align: left;">El gegant lliure que desafia els models privats</p>
             <div class="author-badge">
-              <strong>Miquel Dieguez</strong> | Digitalització (DAM1) | 2026
+              Miquel Dieguez
             </div>
           </div>
         </section>
 
         <!-- Diapositiva 2: Què fa? -->
-        <section data-auto-animate data-transition="convex">
+        <section data-transition="convex-in fade-out">
           <h2>Què és exactament?</h2>
           <div class="grid-2">
             <div class="stat-box glass-card">
@@ -209,16 +208,16 @@
             <div style="text-align: left;">
               <p style="font-size: 0.85em; margin-bottom: 10px;">Creat pel <strong>Technology Innovation Institute (TII)</strong>, és un LLM massiu que rivalitza amb els millors del món.</p>
               <ul style="margin: 0;">
-                <li class="fragment"><i>📝</i> Redacció i generació de text</li>
-                <li class="fragment"><i>🧠</i> Raonament i resolució problemes</li>
-                <li class="fragment"><i>💬</i> Assistent conversacional</li>
+                <li><i>📝</i> Redacció i generació de text</li>
+                <li><i>🧠</i> Raonament i resolució problemes</li>
+                <li><i>💬</i> Assistent conversacional</li>
               </ul>
             </div>
           </div>
         </section>
 
         <!-- Diapositiva 3: Entrenament -->
-        <section data-auto-animate data-transition="concave">
+        <section data-transition="concave-in fade-out">
           <h2>Magnitud d'Entrenament</h2>
           <p style="margin-bottom: 10px;">Entrenat amb una quantitat de dades sense precedents en l'ecosistema obert.</p>
           <div class="glass-card">
@@ -235,24 +234,24 @@
           <p style="margin-bottom:5px;">A diferència de models opacs com GPT-4, Falcon és de domini públic.</p>
           
           <ul class="glass-card" style="padding: 10px 15px; margin-top: 10px;">
-            <li class="fragment"><i>🔓</i> <strong>Accès:</strong> Codis i pesos disponibles.</li>
-            <li class="fragment"><i>🔬</i> <strong>Innovació:</strong> Motor per a universitats.</li>
-            <li class="fragment"><i>🏢</i> <strong>Negoci:</strong> Zero llicències astronòmiques.</li>
+            <li><i>🔓</i> <strong>Accès:</strong> Codis i pesos disponibles.</li>
+            <li><i>🔬</i> <strong>Innovació:</strong> Motor per a universitats.</li>
+            <li><i>🏢</i> <strong>Negoci:</strong> Zero llicències astronòmiques.</li>
           </ul>
         </section>
 
         <!-- Diapositiva 5: Rendiment -->
-        <section data-auto-animate data-transition="zoom">
+        <section data-transition="zoom-in slide-out">
           <h2>Rendiment de Primera</h2>
           <div class="grid-2">
             <div>
               <ul style="margin: 0; padding: 0;">
-                <li class="fragment" style="background: rgba(0, 201, 255, 0.1); border-left-color: #00C9FF;"><i>🏆</i> Supera a LLaMA 2</li>
-                <li class="fragment"><i>⚖️</i> Igual a PaLM 2 i GPT-3.5</li>
-                <li class="fragment"><i>🗣️</i> Versions 'Base' i 'Chat'</li>
+                <li style="background: rgba(0, 201, 255, 0.1); border-left-color: #00C9FF;"><i>🏆</i> Supera a LLaMA 2</li>
+                <li><i>⚖️</i> Igual a PaLM 2 i GPT-3.5</li>
+                <li><i>🗣️</i> Versions 'Base' i 'Chat'</li>
               </ul>
             </div>
-            <div class="glass-card fragment" style="border-color: rgba(255, 107, 107, 0.3); padding: 15px;">
+            <div class="glass-card" style="border-color: rgba(255, 107, 107, 0.3); padding: 15px;">
               <h4 class="gradient-text-alt" style="margin-bottom: 5px; font-size:1em;">⚠️ El Cost del Poder</h4>
               <p style="font-size: 0.7em; margin: 0; line-height: 1.3;">Aixecar-lo localment requereix hardware extrem: desenes de GPUs professionals o centenars de GB de RAM per moure'l.</p>
             </div>
@@ -263,7 +262,7 @@
         <section data-transition="fade">
           <div style="padding: 20px 0;">
             <h1 class="gradient-text pulse-text" style="font-size: 3em;">Gràcies!</h1>
-            <p style="font-size: 1.1em; margin-top: 10px;">Teniu alguna pregunta?</p>
+            <p style="font-size: 1.1em; margin-top: 10px;">Moltes gràcies per la vostra atenció.</p>
             <p class="footer-note">Tasca RA4 Models d'entrenament IA de codi obert</p>
           </div>
         </section>
@@ -282,6 +281,7 @@
         hash: true,
         slideNumber: 'c/t',
         transition: 'slide',
+        transitionSpeed: 'slow', // Fa que les transicions es vegin més èpiques
         backgroundTransition: 'fade',
         center: true,
         controls: true,
